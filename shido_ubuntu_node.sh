@@ -42,7 +42,7 @@ else
 fi
 
 sudo cp $current_path/libwasmvm.x86_64.so /usr/lib
-wget https://testnet-blockchain-shido.s3.us-west-2.amazonaws.com/snapshot22feb2024.zip
+wget https://testnet-blockchain-shido.s3.us-west-2.amazonaws.com/snapshot15apr2024.zip
 #==========================================================================================================================================
 KEYS="alice"
 CHAINID="shido_9007-1"
@@ -135,7 +135,7 @@ fi
 	shidod validate-genesis --home "$HOMEDIR"
 
  	cd $HOMEDIR/data
-	unzip $current_path/snapshot22feb2024.zip
+	unzip $current_path/snapshot15apr2024.zip
 
 	ADDRESS=$(shidod keys list --home $HOMEDIR --keyring-backend $KEYRING | grep "address" | cut -c12-)
 	WALLETADDRESS=$(shidod debug addr $ADDRESS --home $HOMEDIR --keyring-backend $KEYRING)
