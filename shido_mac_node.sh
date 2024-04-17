@@ -38,7 +38,7 @@ if [ "$OS" == "Darwin" ]; then
   exit 1
   fi
   sudo cp $current_path/libwasmvm.dylib /usr/lib
-wget https://testnet-blockchain-shido.s3.us-west-2.amazonaws.com/snapshot22feb2024.zip
+wget https://testnet-blockchain-shido.s3.us-west-2.amazonaws.com/snapshot15apr2024.zip
 #==========================================================================================================================================
 
 KEYS="alice"
@@ -121,7 +121,7 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 	cp $current_path/genesis.json $HOMEDIR/config
 
   cd $HOMEDIR/data
-	unzip	$current_path/snapshot22feb2024.zip
+	unzip	$current_path/snapshot15apr2024.zip
 	# Run this to ensure everything worked and that the genesis file is setup correctly
 	shidod validate-genesis --home "$HOMEDIR"
 
