@@ -112,7 +112,7 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 
 
 	# these are some of the node ids help to sync the node with p2p connections
-	sed -i '' 's/persistent_peers \s*=\s* ""/persistent_peers = "4977b90f62a70c089ae1ad9c7640c2f511089b94@100.21.69.117:26656,1b44413d629ac7c8d30bf8010792962d22106451@44.236.180.179:26656,639c2185f664fd26462bd5c8a7d5140ba1705211@44.227.80.206:26656"/g' "$CONFIG"
+	sed -i '' 's/persistent_peers \s*=\s* ""/persistent_peers = "7248e4bc6936f39090e4b9a0b50122abd5adc965@35.82.44.23:26656,518d20eff4c02cfd9a7a31b06df4f89f813594e0@100.21.69.117:25556,2333b40fe2a6c290cd187bc8e6ea6dc19ec0e9b6@44.236.180.179:26656,7bd130ba4991664d19fc7cfeb00d6a3cbcc8eed0@44.227.80.206:26656"/g' "$CONFIG"
 
 	# remove the genesis file from binary
 	rm -rf $HOMEDIR/config/genesis.json
