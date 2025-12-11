@@ -15,7 +15,7 @@ System Requirements:
 
 #### Clone this repo using:
 ```bash
-git clone 'repourl'
+git clone 'https://github.com/ShidoGlobal/shido-testnet-nodesync.git'
 
 ```
 ## Setup a node first:
@@ -33,7 +33,7 @@ for mac run this script
 
 **NOTE:** The blockchain syncing is running in a background as a service you can print the logs and check the logs of the node with the following command.
 ```bash
-journalctl -u shido -f (it's for ubuntu)
+journalctl -u shidochain -f (it's for ubuntu)
 ```
 
 for mac logs run this
